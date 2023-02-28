@@ -1,0 +1,96 @@
+/*
+
+COLOR PALETTE
+
+WHITE: #FEFEFE
+BLACK: #000000
+TEXT INPUT BACKGROUND: #EEEEEE
+ADD BUTTON: #FFCC68
+DELETE BUTTON: #FF9548
+CHORE: #FBDF7C
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    text-align: center;
+    min-width: 450px
+}
+
+h1 {
+    font-family: 'Concert One', cursive;
+    font-size: 4em;
+    margin: 0.5em;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 5px auto;
+}
+
+.input-btn {
+    padding: 1em;
+    border: none;
+    text-align: center;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    margin-right: 5px;
+    font-size: 1.5em;
+    flex: 1; /* replace the fixed width with a flexible width */
+    min-width: 200px;
+}
+
+button {
+    border: none;
+    font-family: 'Inter', sans-serif;
+    margin: 0 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 2em;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.add-btn {
+    background-color: #FFCC68;
+}
+
+.delete-btn {
+    background-color: #FF9548;
+}
+
+.first-chore,
+.second-chore,
+.third-chore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 20px 30px;
+    border-radius: 10px;
+    max-width: 100%; /* add max-width to prevent overflow */
+    background-color: #FBDF7C;
+    font-size: 1.5em;
+    height: 3em;
+    overflow: hidden; /* hide any overflow of the text within the element */
+}
+
+.container {
+    padding: 0;
+    margin: 0; 
+}
+
